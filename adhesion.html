@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Adhésion - Paname FC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Paname FC</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="stade.html">Stade</a></li>
+        <li><a href="adhesion.html">Adhésion</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="adhesion">
+    <h2>Adhérer au Paname FC</h2>
+    
+    <!-- Images centrées côte à côte -->
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-bottom: 20px;">
+      <img src="jeunes.jpg" alt="Jeunes joueurs" style="width: 45%; border-radius: 20px;">
+      <img src="contract.jpg" alt="Contrat d'adhésion" style="width: 45%; border-radius: 20px;">
+    </div>
+
+    <p>Remplis ce formulaire pour rejoindre la famille Paname FC :</p>
+    
+    <!-- Formulaire d'adhésion -->
+    <form style="margin-top: 20px; max-width: 600px; margin: 0 auto; background-color: #f4f4f4; padding: 20px; border-radius: 10px;">
+      <label for="nom">Nom :</label><br>
+      <input type="text" id="nom" name="nom" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+      <label for="prenom">Prénom :</label><br>
+      <input type="text" id="prenom" name="prenom" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+      <label for="age">Âge :</label><br>
+      <input type="number" id="age" name="age" min="5" max="99" style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+      <label for="email">Email :</label><br>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+      <label for="categorie">Catégorie :</label><br>
+      <select id="categorie" name="categorie" style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;">
+        <option>U9</option>
+        <option>U11</option>
+        <option>U13</option>
+        <option>U15</option>
+        <option>U18</option>
+        <option>Seniors</option>
+      </select><br>
+
+      <input type="submit" value="Envoyer" style="background-color: #002D72; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer;">
+    </form>
+
+    <h3 style="margin-top: 40px; text-align: center;">📅 Horaires des entraînements</h3>
+    <ul style="text-align: center;">
+      <li><strong>U9 / U11 :</strong> Mercredi 14h - 16h</li>
+      <li><strong>U13 / U15 :</strong> Mardi et Jeudi 17h30 - 19h</li>
+      <li><strong>U18 :</strong> Lundi, Mercredi, Vendredi 18h - 19h30</li>
+      <li><strong>Seniors :</strong> Mardi et Vendredi 20h - 22h</li>
+    </ul>
+  </section>
+
+</body>
+</html>
